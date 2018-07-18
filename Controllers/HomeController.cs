@@ -17,7 +17,7 @@ namespace WhatsApp.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page is here and there and nowhere";
+            ViewData["Message"] = "Your application description page is here and there and no-where to be found";
 
             return View();
         }
