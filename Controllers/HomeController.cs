@@ -24,7 +24,7 @@ namespace WhatsApp.Controllers
 
         public IActionResult Contact()
         {
-            ViewData["Message"] = "Your contact page.";
+            ViewData["Message"] = "Your contact page is not here, go home you're drunk.";
 
             return View();
         }
