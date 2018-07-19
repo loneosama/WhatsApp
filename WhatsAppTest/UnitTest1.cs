@@ -1,7 +1,8 @@
 using System;
 using System.Collections.Generic;
 using Xunit;
-
+using WhatsApp.Controllers;
+using Microsoft.AspNetCore.Mvc;
 namespace WhatsAppTest
 {
     public class UnitTest1
@@ -21,6 +22,12 @@ namespace WhatsAppTest
             list.Add(10);
             list.Add(5);
             Assert.DoesNotContain(15,list);
+        }
+        [Fact]
+        public void TestControllerReturningViewType(){
+            HomeController cont = new HomeController();
+            var result = cont.About();
+            Assert.IsType<ViewResult>(result);
         }
     }
 }
